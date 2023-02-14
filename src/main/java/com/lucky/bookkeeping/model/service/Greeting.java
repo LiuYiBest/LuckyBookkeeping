@@ -1,4 +1,4 @@
-package com.lucky.bookkeeping.model;
+package com.lucky.bookkeeping.model.service;
 
 public class Greeting {
     private final Long id;
