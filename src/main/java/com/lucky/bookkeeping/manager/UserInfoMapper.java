@@ -1,0 +1,13 @@
+package com.lucky.bookkeeping.manager;
+
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.annotations.Select;
+
+@Mapper
+public interface UserInfoMapper {
+
+    @Select("SELECT id,username,password,create_time,updat_time FROM hcas_userinfo WHERE id=#{id}")
+     <UserInfo> UserInfo getUserInfoByUserId(@Param("id")Long id);
+
+}
